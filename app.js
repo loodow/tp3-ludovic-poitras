@@ -1,4 +1,5 @@
 'use strict';
+const PORT = process.env.PORT || 8090;
 var express = require('express');
 var app = express();
 //Permet de récupérer du JSON dans le corps de la requête
@@ -34,6 +35,6 @@ app.all('*', function (req, res) {
 });
 
 // Démarrage du serveur.
-app.listen(8090, function () {
+app.listen(PORT, function () {
     console.log('Serveur sur port ' + this.address().port);
 });

@@ -8,7 +8,7 @@ var jwt = require('jsonwebtoken');
 var UsagerModel = require('../modeles/usagerModel').Usager;
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/tp3', {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.rc1ua.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/tp3', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10
